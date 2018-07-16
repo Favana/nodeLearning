@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha **/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/gulp-nodemon": "0.0.32",
     "@types/mocha": "^5.2.4",
     "@types/node": "^10.3.5",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
     "mocha": "^5.2.0",
     "mongoose": "^5.2.2"
   }
